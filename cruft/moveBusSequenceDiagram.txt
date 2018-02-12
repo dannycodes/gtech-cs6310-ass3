@@ -1,0 +1,51 @@
+https://www.websequencediagrams.com/
+
+"commandInterpreter: SimDriver"->+"simEngine: SimQueue": triggerNextEvent()
+
+"simEngine: SimQueue"->"simEngine: SimQueue": "Get next event in Queue"
+
+"simEngine: SimQueue"->+"martaModel : BusSystem": getBus()
+"martaModel : BusSystem"->-"simEngine: SimQueue": "activeBus : Bus"
+
+"simEngine: SimQueue"->+"martaModel : BusSystem": getRoute()
+"martaModel : BusSystem"->-"simEngine: SimQueue": "activeRoute : BusRoute"
+
+
+"simEngine: SimQueue"->+"activeBus : Bus": getLocation()
+"activeBus : Bus"-->-"simEngine: SimQueue": "activeLocation : Integer"
+
+"simEngine: SimQueue"->+"activeRoute : BusRoute": getStopID(activeLocation)
+"activeRoute : BusRoute"-->-"simEngine: SimQueue": "activeStopID : Integer"
+
+"simEngine: SimQueue"->+"martaModel : BusSystem": getStop(activeStopID)
+"martaModel : BusSystem"->-"simEngine: SimQueue": "activeStop : BusStop"
+
+"simEngine: SimQueue"->+"activeBus : Bus": getPassengers()
+"activeBus : Bus"-->-"simEngine: SimQueue": "currentPassengers : Integer"
+
+"simEngine: SimQueue"->+"activeBus : Bus": getCapacity()
+"activeBus : Bus"-->-"simEngine: SimQueue": "busCapacity : Integer"
+
+"simEngine: SimQueue"->+"activeStop : BusStop": exchangeRiders(currentPassengers, busCapacity)
+"activeStop : BusStop"->-"simEngine: SimQueue": "passengerDifferential : Integer"
+
+"simEngine: SimQueue"->"activeBus : Bus": adjustPassengers(passengerDifferential)
+
+"simEngine: SimQueue"->+"activeRoute : BusRoute": getNextLocation(activeLocation)
+"activeRoute : BusRoute"-->-"simEngine: SimQueue": "nextLocation : Integer"
+
+"simEngine: SimQueue"->+"activeRoute : BusRoute": getStopID(nextLocation)
+"activeRoute : BusRoute"-->-"simEngine: SimQueue": "nextStopID : Integer"
+
+"simEngine: SimQueue"->+"martaModel : BusSystem": getStop(nextStopID)
+"martaModel : BusSystem"->-"simEngine: SimQueue": "nextStop : BusStop"
+
+"simEngine: SimQueue"->+"activeStop : BusStop": findDistance(nextStop)
+"activeStop : BusStop"->-"simEngine: SimQueue": "travelDistance : Double"
+
+"simEngine: SimQueue"->+"activeBus : Bus": getSpeed()
+"activeBus : Bus"-->-"simEngine: SimQueue": "busSpeed : Integer"
+
+"simEngine: SimQueue"->"activeBus : Bus": setLocation(nextLocation)
+
+"simEngine: SimQueue"->"simEngine: SimQueue": "add(new SimEvent) to Queue"

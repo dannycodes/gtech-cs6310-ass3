@@ -1,0 +1,220 @@
+Mass Transit Simulation System Starting...
+# main:  new stop: 0 created
+# main:  new stop: 1 created
+# main:  new stop: 2 created
+# main:  new stop: 3 created
+# main:  new stop: 4 created
+# main:  new stop: 5 created
+# main:  new stop: 6 created
+# main:  new stop: 7 created
+# main:  new route: 0 created
+# main:  new route: 1 created
+# main:  stop: 5 appended to route 0
+# main:  stop: 7 appended to route 0
+# main:  stop: 1 appended to route 0
+# main:  stop: 2 appended to route 0
+# main:  stop: 1 appended to route 0
+# main:  stop: 7 appended to route 0
+# main:  stop: 4 appended to route 1
+# main:  stop: 0 appended to route 1
+# main:  stop: 1 appended to route 1
+# main:  stop: 2 appended to route 1
+# main:  stop: 3 appended to route 1
+# main:  stop: 6 appended to route 1
+# main:  stop: 5 appended to route 1
+# main:  new bus: 0 created
+# main:  new bus: 1 created
+# main:  new event - rank: 1 type: move_bus ID: 0 created
+# main:  new event - rank: 1 type: move_bus ID: 1 created
+# main:  new event - rank: 2 type: riders_arrive ID: 0 created
+# main:  queue activated for 20 event(s)
+# event rank: 1 type: move_bus ID: 0
+ the bus being observed is: 0
+ the bus is driving on route: 0
+ the bus is currently at stop: 5 - South Side
+ passengers pre-stop: 0 post-stop: 0
+ the bus is heading to stop: 7 - Central City
+
+# event rank: 1 type: move_bus ID: 1
+ the bus being observed is: 1
+ the bus is driving on route: 1
+ the bus is currently at stop: 4 - West Side
+ passengers pre-stop: 0 post-stop: 0
+ the bus is heading to stop: 0 - Appleville
+
+# event rank: 2 type: riders_arrive ID: 0
+ stop: Appleville has 2 new passengers
+ stop: Banana Bayou has 1 new passengers
+ stop: Star City has 2 new passengers
+ stop: Cherry City has 3 new passengers
+ stop: West Side has 1 new passengers
+ stop: South Side has 4 new passengers
+ stop: East Side has 3 new passengers
+ stop: Central City has 3 new passengers
+
+# event rank: 5 type: move_bus ID: 1
+ the bus being observed is: 1
+ the bus is driving on route: 1
+ the bus is currently at stop: 0 - Appleville
+ passengers pre-stop: 0 post-stop: 1
+ the bus is heading to stop: 1 - Banana Bayou
+
+# event rank: 6 type: move_bus ID: 0
+ the bus being observed is: 0
+ the bus is driving on route: 0
+ the bus is currently at stop: 7 - Central City
+ passengers pre-stop: 0 post-stop: 1
+ the bus is heading to stop: 1 - Banana Bayou
+
+# event rank: 7 type: riders_arrive ID: 0
+ stop: Appleville has 1 new passengers
+ stop: Banana Bayou has 0 new passengers
+ stop: Star City has 3 new passengers
+ stop: Cherry City has 1 new passengers
+ stop: West Side has 3 new passengers
+ stop: South Side has 4 new passengers
+ stop: East Side has 1 new passengers
+ stop: Central City has 2 new passengers
+
+# event rank: 8 type: move_bus ID: 1
+ the bus being observed is: 1
+ the bus is driving on route: 1
+ the bus is currently at stop: 1 - Banana Bayou
+ passengers pre-stop: 1 post-stop: 0
+ the bus is heading to stop: 2 - Star City
+
+# event rank: 11 type: riders_arrive ID: 0
+ stop: Appleville has 1 new passengers
+ stop: Banana Bayou has 3 new passengers
+ stop: Star City has 2 new passengers
+ stop: Cherry City has 3 new passengers
+ stop: West Side has 0 new passengers
+ stop: South Side has 2 new passengers
+ stop: East Side has 0 new passengers
+ stop: Central City has 2 new passengers
+
+# event rank: 12 type: move_bus ID: 1
+ the bus being observed is: 1
+ the bus is driving on route: 1
+ the bus is currently at stop: 2 - Star City
+ passengers pre-stop: 0 post-stop: 0
+ the bus is heading to stop: 3 - Cherry City
+
+# event rank: 12 type: move_bus ID: 0
+ the bus being observed is: 0
+ the bus is driving on route: 0
+ the bus is currently at stop: 1 - Banana Bayou
+ passengers pre-stop: 1 post-stop: 2
+ the bus is heading to stop: 2 - Star City
+
+# event rank: 14 type: riders_arrive ID: 0
+ stop: Appleville has 0 new passengers
+ stop: Banana Bayou has 1 new passengers
+ stop: Star City has 4 new passengers
+ stop: Cherry City has 3 new passengers
+ stop: West Side has 2 new passengers
+ stop: South Side has 0 new passengers
+ stop: East Side has 2 new passengers
+ stop: Central City has 0 new passengers
+
+# event rank: 18 type: move_bus ID: 1
+ the bus being observed is: 1
+ the bus is driving on route: 1
+ the bus is currently at stop: 3 - Cherry City
+ passengers pre-stop: 0 post-stop: 2
+ the bus is heading to stop: 6 - East Side
+
+# event rank: 18 type: riders_arrive ID: 0
+ stop: Appleville has 0 new passengers
+ stop: Banana Bayou has 3 new passengers
+ stop: Star City has 3 new passengers
+ stop: Cherry City has 0 new passengers
+ stop: West Side has 0 new passengers
+ stop: South Side has 3 new passengers
+ stop: East Side has 4 new passengers
+ stop: Central City has 0 new passengers
+
+# event rank: 20 type: move_bus ID: 0
+ the bus being observed is: 0
+ the bus is driving on route: 0
+ the bus is currently at stop: 2 - Star City
+ passengers pre-stop: 2 post-stop: 1
+ the bus is heading to stop: 1 - Banana Bayou
+
+# event rank: 21 type: riders_arrive ID: 0
+ stop: Appleville has 4 new passengers
+ stop: Banana Bayou has 3 new passengers
+ stop: Star City has 0 new passengers
+ stop: Cherry City has 0 new passengers
+ stop: West Side has 0 new passengers
+ stop: South Side has 0 new passengers
+ stop: East Side has 2 new passengers
+ stop: Central City has 2 new passengers
+
+# event rank: 24 type: move_bus ID: 1
+ the bus being observed is: 1
+ the bus is driving on route: 1
+ the bus is currently at stop: 6 - East Side
+ passengers pre-stop: 2 post-stop: 1
+ the bus is heading to stop: 5 - South Side
+
+# event rank: 26 type: riders_arrive ID: 0
+ stop: Appleville has 1 new passengers
+ stop: Banana Bayou has 3 new passengers
+ stop: Star City has 2 new passengers
+ stop: Cherry City has 0 new passengers
+ stop: West Side has 0 new passengers
+ stop: South Side has 1 new passengers
+ stop: East Side has 1 new passengers
+ stop: Central City has 3 new passengers
+
+# event rank: 28 type: move_bus ID: 1
+ the bus being observed is: 1
+ the bus is driving on route: 1
+ the bus is currently at stop: 5 - South Side
+ passengers pre-stop: 1 post-stop: 1
+ the bus is heading to stop: 4 - West Side
+
+# event rank: 28 type: move_bus ID: 0
+ the bus being observed is: 0
+ the bus is driving on route: 0
+ the bus is currently at stop: 1 - Banana Bayou
+ passengers pre-stop: 1 post-stop: 1
+ the bus is heading to stop: 7 - Central City
+
+# event rank: 29 type: riders_arrive ID: 0
+ stop: Appleville has 3 new passengers
+ stop: Banana Bayou has 1 new passengers
+ stop: Star City has 3 new passengers
+ stop: Cherry City has 4 new passengers
+ stop: West Side has 0 new passengers
+ stop: South Side has 4 new passengers
+ stop: East Side has 0 new passengers
+ stop: Central City has 2 new passengers
+
+# main:  system report - stops, buses and routes:
+> stop - ID: 0 name: Appleville riders: 16
+ xCoord: 0.0 yCoord: 8.0
+> stop - ID: 1 name: Banana Bayou riders: 12
+ xCoord: 4.0 yCoord: 10.0
+> stop - ID: 2 name: Star City riders: 18
+ xCoord: 8.0 yCoord: 16.0
+> stop - ID: 3 name: Cherry City riders: 12
+ xCoord: 16.0 yCoord: 10.0
+> stop - ID: 4 name: West Side riders: 6
+ xCoord: 1.0 yCoord: 1.0
+> stop - ID: 5 name: South Side riders: 18
+ xCoord: 4.0 yCoord: 1.0
+> stop - ID: 6 name: East Side riders: 12
+ xCoord: 10.0 yCoord: 2.0
+> stop - ID: 7 name: Central City riders: 13
+ xCoord: 4.0 yCoord: 5.0
+> bus - ID: 0 route: 0 location: 5
+ passengers: 1 capacity: 45 speed: 1
+> bus - ID: 1 route: 1 location: 0
+ passengers: 1 capacity: 30 speed: 2
+> route - ID: 0 number: 10 name: Express
+ stops: [ 0:5 1:7 2:1 3:2 4:1 5:7 ]
+> route - ID: 1 number: 16 name: Perimeter
+ stops: [ 0:4 1:0 2:1 3:2 4:3 5:6 6:5 ]
+# main:  stop the command loop

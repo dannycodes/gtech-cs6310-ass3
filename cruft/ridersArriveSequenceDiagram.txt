@@ -1,0 +1,20 @@
+
+"commandInterpreter: SimDriver"->+"simEngine: SimQueue": triggerNextEvent()
+
+"simEngine: SimQueue"->"simEngine: SimQueue": "Get next event in Queue"
+
+"simEngine: SimQueue"->+"martaModel: BusSystem": getStops()
+"martaModel: BusSystem"->-"simEngine: SimQueue": "busStops : BusStop[]"
+
+loop "busStops"
+  "simEngine: SimQueue"->+"martaModel: BusSystem": getRiders()
+  "martaModel: BusSystem"->-"simEngine: SimQueue": "busRiderGenerator : BusRiderGenerator"
+  
+  "martaModel: BusSystem"->+ "busRiderGenerator: BusRiderGenerator": riderArrivals()
+  "busRiderGenerator : BusRiderGenerator"->-"martaModel: BusSystem": "moreRiders: Integer"
+  "martaModel: BusSystem"->"simEngine: SimQueue": "moreRiders: Integer"
+  
+  "simEngine: SimQueue" ->+"singleStop: BusStop" : addNewRiders(moreRiders)
+end
+
+"simEngine: SimQueue" -> "simEngine: SimQueue" : add(new SimEvent) to Queue
