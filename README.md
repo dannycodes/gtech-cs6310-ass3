@@ -1,4 +1,4 @@
-== Georgia Tech OMSCS CS6310 - Assignment 3
+## Georgia Tech OMSCS CS6310 - Assignment 3
 
 I have uploaded my submission to the titular assignment here to have a permanent reference to the project in the future. The structure is as follows.
 
